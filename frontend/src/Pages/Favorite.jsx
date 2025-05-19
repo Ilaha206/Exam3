@@ -2,7 +2,9 @@
 
 function Favorite() {
   return (
-    <div>Favorite</div>
+    <>
+    <title>Favorite</title>
+    </>
   )
 }
 

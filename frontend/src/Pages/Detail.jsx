@@ -31,6 +31,7 @@ function Detail() {
 
     return (
         <>
+        <title>Detail</title>
             <div>Detail {id}</div>
             {<ul>
                 <li><img src={cosmetic.img} alt="cosmetic" /></li>

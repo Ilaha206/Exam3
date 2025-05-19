@@ -40,6 +40,7 @@ function Admin() {
 
     return (
         <>
+        <title>Admin</title>
             <table>
                 <thead>
                     <tr>

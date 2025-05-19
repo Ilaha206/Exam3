@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios";
 import { Link } from "react-router";
+import './style.css'
 
 function Home() {
     const [cosmetic, setcosmetic] = useState([])
@@ -19,12 +20,15 @@ function Home() {
 
     return (
         <>
-            {cosmetic.map((x) => <ul key={x._id}>
-                <li><img src={x.img} alt="cosmetic" /></li>
-                <li>{x.title}</li>
-                <li>{x.price}</li>
-                <li><button><Link to={"detail/"+x._id}>Detail</Link></button></li>
-            </ul>)}
+        <title>Home</title>
+        <div className="cosmetics">
+            {cosmetic.map((x) => <div className="cosmetic" key={x._id}>
+                <img src={x.img} alt="cosmetic" />
+                <h2>{x.title}</h2>
+                <p>{x.price}</p>
+                <button><Link to={"detail/"+x._id}>Detail</Link></button>
+            </div>)}
+            </div>
         </>
     )
 }

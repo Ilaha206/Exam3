@@ -1,7 +1,8 @@
 
 function Basket() {
   return (
-    <div>Basket</div>
+    <>
+    <title>Basket</title></>
   )
 }
 

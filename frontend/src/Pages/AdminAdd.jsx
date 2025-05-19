@@ -6,6 +6,7 @@ function AdminAdd() {
     const URL = "http://localhost:3500/"
     return (
         <>
+        <title>AdminAdd</title>
             <Formik
                 initialValues={{ title: '', price: '', img: '' }}
                 validationSchema={Yup.object({
